@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import Iphonex from "./iphonex";
 import Iphone8 from "./iphone8";
 import Iphone8plus from "./iphone8plus";
@@ -16,111 +15,110 @@ import Lumia920 from "./lumia920";
 
 export default class Device extends Component {
   getDevice(type) {
-    let device, orientation;
-    this.props.landscape ? (orientation = "landscape") : (orientation = "");
+    const orientation = this.props.landscape ?  "landscape" :  "";
 
     const iphonex = (
       <Iphonex
         color={this.props.color}
         orientation={orientation}
-				site={this.props.url}
-				{...this.props}
+        site={this.props.url}
+        {...this.props}
       />
     );
     const iphone8 = (
       <Iphone8
         color={this.props.color}
         orientation={orientation}
-				site={this.props.url}
-				{...this.props}
+        site={this.props.url}
+        {...this.props}
       />
     );
     const iphone8plus = (
       <Iphone8plus
         color={this.props.color}
         orientation={orientation}
-				site={this.props.url}
-				{...this.props}
+        site={this.props.url}
+        {...this.props}
       />
     );
     const iphone5s = (
       <Iphone5s
         color={this.props.color}
         orientation={orientation}
-				site={this.props.url}
-				{...this.props}
+        site={this.props.url}
+        {...this.props}
       />
     );
     const iphone5c = (
       <Iphone5c
         color={this.props.color}
         orientation={orientation}
-				site={this.props.url}
-				{...this.props}
+        site={this.props.url}
+        {...this.props}
       />
     );
     const iphone4s = (
       <Iphone4s
         color={this.props.color}
         orientation={orientation}
-				site={this.props.url}
-				{...this.props}
+        site={this.props.url}
+        {...this.props}
       />
     );
     const ipad = (
       <Ipad
         color={this.props.color}
         orientation={orientation}
-				site={this.props.url}
-				{...this.props}
+        site={this.props.url}
+        {...this.props}
       />
     );
     const macbookpro = (
       <Macbookpro
         color={this.props.color}
         orientation={orientation}
-				site={this.props.url}
-				{...this.props}
+        site={this.props.url}
+        {...this.props}
       />
     );
     const htcone = (
       <Htcone
         color={this.props.color}
         orientation={orientation}
-				site={this.props.url}
-				{...this.props}
+        site={this.props.url}
+        {...this.props}
       />
     );
     const nexus5 = (
       <Nexus5
         color={this.props.color}
         orientation={orientation}
-				site={this.props.url}
-				{...this.props}
+        site={this.props.url}
+        {...this.props}
       />
     );
     const lumia920 = (
       <Lumia920
         color={this.props.color}
         orientation={orientation}
-				site={this.props.url}
-				{...this.props}
+        site={this.props.url}
+        {...this.props}
       />
     );
     const galaxys5 = (
       <Galaxys5
         color={this.props.color}
         orientation={orientation}
-				site={this.props.url}
-				{...this.props}
+        site={this.props.url}
+        {...this.props}
       />
     );
     const galaxynote8 = (
       <Galaxynote8
         color={this.props.color}
         orientation={orientation}
-				site={this.props.url}
-				{...this.props}
+        site={this.props.url}
+        {...this.props}
       />
     );
 
@@ -160,10 +158,17 @@ export default class Device extends Component {
   }
 }
 
-Device.propTypes = {
-  name: PropTypes.string.isRequired,
-  color: PropTypes.string,
-  url: PropTypes.string,
-  portrait: PropTypes.boolean,
-  landscape: PropTypes.boolean
-};
+export const DeviceNames = [
+  'iphone-x',
+  'iphone-8',
+  'iphone-8plus',
+  'iphone-5s',
+  'iphone-5c',
+  'iphone-4s',
+  'macbook-pro',
+  'htc-one',
+  'lumia-920',
+  'nexus-5',
+  'galaxy-s5',
+  'galaxy-note8',
+];

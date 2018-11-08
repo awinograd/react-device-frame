@@ -30,11 +30,7 @@ var ContentFrame = function (_React$Component) {
   _createClass(ContentFrame, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement('iframe', {
-        id: this.props.id,
-        name: this.props.name,
-        src: this.props.src
-      });
+      return this.props.children;
     }
   }]);
 

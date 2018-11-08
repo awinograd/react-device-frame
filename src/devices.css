@@ -2893,28 +2893,6 @@
     background: linear-gradient(to bottom, #ff268e 0%, #ff694f 100%)
 }
 
-.iphone-x .screen:before {
-    content: '';
-    width: 140%;
-    height: 100%;
-    position: absolute;
-    top: -30%;
-    right: -70%;
-    background: radial-gradient(ellipse at center, #3e4ff9 0%, rgba(62, 79, 249, 0) 64%)
-}
-
-.iphone-x .screen:after {
-    content: '';
-    width: 140%;
-    height: 140%;
-    position: absolute;
-    bottom: -50%;
-    left: -30%;
-    background: radial-gradient(ellipse at center, #f7ede1 0%, rgba(247, 237, 225, 0) 70%);
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg)
-}
-
 .note8 .screen {
     background: #2288fe;
     background: -webkit-gradient(linear, left top, left bottom, from(#2288fe), to(#fdeba9));
